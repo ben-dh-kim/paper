@@ -1,0 +1,8 @@
+<object data="data:,<script>
+window.onload = function()
+{ // Executing a document.write in a data uri after the onload
+  // changes the location of the object to its parent URL.
+  document.write('<script>alert(top.location.href)<\/script>');
+  document.close();
+}
+</script>"></object>
